@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/image/icon.png" type="image/gif" sizes="16x16">
+    <title>Rak Buku</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fa fa-book"></i> Rak Buku</a>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="form card" id=form>
+            <h2>Input Buku :</h2>
+            <hr>
+            <form>
+                <label for="judul">Judul Buku :</label>
+                <input required type="text" name="judul" id="judul" >
+                <label for="penulis">Penulis :</label>
+                <input required type="text" id='penulis' >
+                <label for="tahun">Tahun :</label>
+                <input required type="number" min="0" id="tahun" >
+                <label for="dibaca">Sudah dibaca?</label>
+                <input type="checkbox" name="" id="dibaca">
+                <input type="submit" value="Submit" id=input>
+            </form>
+        </div>
+        <div class="shelf">
+            <div class="card search">
+                <h2>Cari Buku :</h2>
+                <hr>
+                <input type="text" id="search" placeholder="Cari Buku....">
+                <p class="note">Note : Masukan Judul Buku/Penulis/Tahun</p>
+            </div>
+            <div class="books">
+                <div class="card list-books" id=unread>
+                    <h2>Belum Dibaca :</h2>
+                    <hr>
+
+                </div>
+                <div class="card list-books" id="readed">
+                    <h2>Sudah Dibaca :</h2>
+                    <hr>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer> Develope by : Rizal Maulana Anwar </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
